@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+h1 {
+  color: white;
+  font-family: verdana;
+  font-size: 300%;
+}
+body {
+  cursor: none;
+  background-image: url("images/santaworkshop.jpg");
+}
+#sleigh {
+  position: absolute;
+  width: 280px;
+}
+</style>
+<script>
+(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        event = event || window.event; // IE-ism
+        var x = event.clientX-150;
+        var y = event.clientY-80;
+
+        image = document.getElementById('sleigh').setAttribute("style","top:"+y+"px;left:"+x+"px;")
+    }
+})();
+</script>
+</head>
+<body>
+<img id="sleigh" src="images/santasleigh.png" alt="cursor" style="width:35px">
+  <center>
+    <h1
+    <h1>Santa's Workshop</h1>
+
+
+  </center>
+
+</html>
